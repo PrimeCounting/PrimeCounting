@@ -1,6 +1,6 @@
 # Prime Counting
 
-This is a repository for the paper [Prime Count Uri at el.](https://arxiv.org/).
+This is a repository for the paper [Computing $\pi(N)$: An elementary approach in $\tilde{O}(\sqrt{N})$ time](https://arxiv.org/).
 
 ## Introduction
 
