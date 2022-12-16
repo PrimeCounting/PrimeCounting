@@ -4,7 +4,7 @@ This is a repository for the paper Computing $\pi(N)$: An elementary approach in
 
 ## Introduction
 
-We present an efficient and elementary algorithm for computing the number of primes up to $N$ in $\tilde{O}(\sqrt N)$ time, improving upon the existing combinatorial methods that require $\tilde{O}(N ^ {2/3})$ time. Our method has the same complexity as the analytical approach to prime counting, while avoiding complex analysis and the use of arbitrary precision complex numbers. 
+We present an efficient and elementary algorithm for computing the number of primes up to $N$ in $\tilde{O}(\sqrt N)$ time, improving upon the existing combinatorial methods that require $\tilde{O}(N ^ {2/3})$ time. Our method has a similar complexity to the analytical approach to prime counting, while avoiding complex analysis and the use of arbitrary precision complex numbers. 
 
 ## Content
 
