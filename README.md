@@ -1,6 +1,6 @@
 # Prime Counting
 
-This is a repository for the paper Computing $\pi(N)$: An elementary approach in $\tilde{O}(\sqrt{N})$ time.
+This is a repository for the paper Computing $\pi(N)$: An elementary approach in $\tilde{O}(\sqrt{N})$ time by Dean Hirsch, Ido Kessler and Uri Mendlovic.
 
 ## Introduction
 
