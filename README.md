@@ -1,6 +1,6 @@
 # Prime Counting
 
-This is a repository for the paper Computing $\pi(N)$: An elementary approach in $\tilde{O}(\sqrt{N})$ time by Dean Hirsch, Ido Kessler and Uri Mendlovic.
+This is a repository for the [paper](https://arxiv.org/abs/2212.09857) Computing $\pi(N)$: An elementary approach in $\tilde{O}(\sqrt{N})$ time by Dean Hirsch, Ido Kessler and Uri Mendlovic.
 
 ## Introduction
 
@@ -10,7 +10,7 @@ We present an efficient and elementary algorithm for computing the number of pri
 
 The repository contain two implementations of the algorithm described in the paper. One implementation is in python, which is provided for ease of reading, and one in c++ which provides more optimizations.
 
-It is recommended reading the section [`Basic Algorithm`](https://arxiv.org/#section.2) in the paper before reading the code.
+It is recommended reading the section [`Basic Algorithm`](https://arxiv.org/abs/2212.09857) in the paper before reading the code.
 
 ## Build instructions
 
