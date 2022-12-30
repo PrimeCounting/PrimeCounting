@@ -1,7 +1,5 @@
 #include "ntt.h"
 
-#include <bits/stdc++.h>
-
 #include "../helpers/assertion.h"
 #include "../helpers/indicators.h"
 #include "../mobius/bit_reverse.h"

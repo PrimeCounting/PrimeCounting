@@ -1,7 +1,8 @@
 #include "ntt.h"
 
-#include <bits/stdc++.h>
 #include <gtest/gtest.h>
+
+#include <numeric>
 
 #include "../conv/naive_conv.h"
 #include "../helpers/benchmark.h"
