@@ -2,6 +2,8 @@
 
 #include <cmath>
 
+#include "../helpers/types.h"
+
 double li(prime_t upto) {
   if (upto <= 2) return 1;
   if (upto <= 3) return 2;

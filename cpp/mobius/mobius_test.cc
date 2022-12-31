@@ -1,7 +1,10 @@
 #include <gtest/gtest.h>
 
-#include <cmath>
+#include <algorithm>
+#include <vector>
 
+#include "../helpers/mod_int.h"
+#include "../helpers/types.h"
 #include "mobius_using_newton.h"
 #include "naive_mobius.h"
 

@@ -1,7 +1,12 @@
 #include "ntt.h"
 
+#include <algorithm>
+#include <array>
+#include <utility>
+
 #include "../helpers/assertion.h"
 #include "../helpers/indicators.h"
+#include "../helpers/mod_int.h"
 #include "../mobius/bit_reverse.h"
 
 namespace {

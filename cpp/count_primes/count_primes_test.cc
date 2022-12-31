@@ -3,7 +3,15 @@
 
 #include <gtest/gtest.h>
 
+#include <map>
+#include <string>
+#include <vector>
+
+#include "../helpers/assertion.h"
+#include "../helpers/math.h"
+#include "../helpers/mod_int.h"
 #include "../helpers/sieve_primes.h"
+#include "../helpers/types.h"
 
 void test_size(prime_t upto) {
   prime_t num_primes = get_primes_by_sieve(upto).size();

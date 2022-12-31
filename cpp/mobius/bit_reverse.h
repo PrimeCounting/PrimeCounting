@@ -1,7 +1,7 @@
 #pragma once
 
 #include <array>
-#include <sstream>
+#include <utility>
 #include <vector>
 
 #include "../helpers/assertion.h"

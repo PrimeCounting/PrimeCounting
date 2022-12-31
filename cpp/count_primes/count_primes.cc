@@ -1,11 +1,14 @@
 #include "count_primes.h"
 
-#include "../factorize_range/factorize_range.h"
+#include <array>
+#include <vector>
+
 #include "../helpers/cell.h"
-#include "../helpers/double_int.h"
-#include "../helpers/indicators.h"
+#include "../helpers/mod_int.h"
 #include "../helpers/sieve_primes.h"
+#include "../helpers/types.h"
 #include "../mobius/mobius_using_newton.h"
+#include "error_correction.h"
 #include "logarithmic_integral.h"
 
 mint count_primes_with_errors(prime_t upto, double lg2_prec,

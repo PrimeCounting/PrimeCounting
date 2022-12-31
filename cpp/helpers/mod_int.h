@@ -1,11 +1,11 @@
 #pragma once
-#include <concepts>
+
 #include <iostream>
+#include <type_traits>
 
 #include "../constants.h"
 #include "double_int.h"
 #include "math.h"
-#include "types.h"
 
 namespace details {
 template <std::unsigned_integral T, T MOD>

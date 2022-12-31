@@ -1,9 +1,8 @@
 #pragma once
 #include <cmath>
 
-#include "../NTT/ntt.h"
+#include "../helpers/mod_int.h"
 #include "../helpers/types.h"
-#include "error_correction.h"
 
 mint count_primes_with_errors(prime_t upto, double lg2_prec,
                               prime_t max_prime_to_use);

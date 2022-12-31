@@ -1,6 +1,8 @@
 #pragma once
 
-#include "../NTT/ntt.h"
+#include <vector>
+
+#include "../helpers/mod_int.h"
 #include "../helpers/types.h"
 
 namespace mobius::details {

@@ -105,7 +105,7 @@ auto title_range(std::string desc, Args... start_end_step) {
 }
 
 struct Title {
-  Title(std::string desc) : tq(title_range<size_t>(desc, 1)) {}
+  explicit Title(const std::string& desc) : tq(title_range<size_t>(desc, 1)) {}
   ~Title() { ++tq; }
   TRange<size_t> tq;
 };

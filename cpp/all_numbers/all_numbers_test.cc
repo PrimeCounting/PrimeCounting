@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 
 #include "../helpers/mod_int.h"
+#include "../helpers/types.h"
 #include "naive_all_numbers.h"
 
 using mi = ModInt32<1'000'000'007>;

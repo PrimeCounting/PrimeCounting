@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 
-#include <iostream>
+#include <utility>
+#include <vector>
 
 #include "math.h"
 

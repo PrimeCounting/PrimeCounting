@@ -1,11 +1,12 @@
 #include "factorize_range.h"
 
 #include <cmath>
-#include <numeric>
-#include <ranges>
+#include <iterator>
+#include <memory>
 
 #include "../helpers/assertion.h"
-#include "../helpers/indicators.h"
+#include "../helpers/double_int.h"
+#include "../helpers/types.h"
 
 namespace {
 std::vector<prime_t> get_single_factor(prime_t upto) {
@@ -56,7 +57,7 @@ inline void factorize_helper(const std::vector<prime_t>& single_factor,
 }  // namespace
 
 void FactorizedSegment::factorize(Factorization& res, prime_t v) {
-  auto& cur = get_value(v);
+  const auto& cur = get_value(v);
   res.clear();
   const auto& single_factor = m_base->m_single_factor;
   auto max_prime = m_base->m_max_prime;

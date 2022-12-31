@@ -1,16 +1,9 @@
 #include "math.h"
 
 #include <array>
-#include <cmath>
+#include <limits>
 
 #include "assertion.h"
-#include "sieve_primes.h"
-
-prime_t inv_mod(prime_t a, prime_t mod) {
-  prime_t res = pow_mod(a, mod - 2, mod);
-  ASSERT_FATAL((wide_mul(a, res) % mod) == 1);  // Maybe mod not a prime?
-  return res;
-}
 
 bool is_prime(prime_t v) {
   if (v <= 3) return true;

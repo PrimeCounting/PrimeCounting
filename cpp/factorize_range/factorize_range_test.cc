@@ -2,8 +2,11 @@
 
 #include <gtest/gtest.h>
 
+#include <iostream>
+
 #include "../helpers/benchmark.h"
 #include "../helpers/math.h"
+#include "../helpers/types.h"
 
 namespace {
 auto as_set(const auto& v) { return std::set(v.begin(), v.end()); }

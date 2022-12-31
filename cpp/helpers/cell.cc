@@ -1,5 +1,7 @@
 #include "cell.h"
 
+#include <limits>
+
 #include "assertion.h"
 #include "math.h"
 

@@ -1,6 +1,5 @@
 #pragma once
-#include <concepts>
-#include <cstddef>
+#include <utility>
 #include <vector>
 
 #include "assertion.h"
@@ -17,8 +16,6 @@ constexpr T pow_mod(T a, size_t p, T mod) {
   }
   return res;
 }
-
-prime_t inv_mod(prime_t a, prime_t mod);
 
 template <std::integral T>
 constexpr bool naive_is_prime(T v) {

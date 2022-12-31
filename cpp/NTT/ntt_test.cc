@@ -2,10 +2,12 @@
 
 #include <gtest/gtest.h>
 
+#include <memory>
 #include <numeric>
 
 #include "../conv/naive_conv.h"
 #include "../helpers/benchmark.h"
+#include "../helpers/mod_int.h"
 
 using NT = std::vector<mint>;
 TEST(NTT, test_conv) {

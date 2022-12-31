@@ -1,10 +1,8 @@
 #pragma once
-#include <stdint.h>
-
-#include <memory>
+#include <optional>
+#include <string>
 #include <vector>
 
-#include "../helpers/assertion.h"
 #include "../helpers/mod_int.h"
 
 namespace details {

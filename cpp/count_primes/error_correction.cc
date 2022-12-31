@@ -1,11 +1,15 @@
 #include "error_correction.h"
 
+#include <functional>
 #include <map>
+#include <string>
+#include <utility>
+#include <vector>
 
 #include "../factorize_range/factorize_range.h"
+#include "../helpers/assertion.h"
 #include "../helpers/cell.h"
-#include "../helpers/indicators.h"
-#include "../helpers/math.h"
+#include "../helpers/types.h"
 
 namespace {
 

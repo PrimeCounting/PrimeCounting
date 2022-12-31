@@ -2,7 +2,8 @@
 
 #include <gtest/gtest.h>
 
-#include "../NTT/ntt.h"
+#include <memory>
+
 #include "benchmark.h"
 
 using mi = ModInt32<1'000'000'007>;

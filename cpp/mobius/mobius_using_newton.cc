@@ -1,9 +1,19 @@
 #include "mobius_using_newton.h"
 
+#include <algorithm>
+#include <cstdint>
+#include <memory>
+#include <string>
+#include <utility>
+
 #include "../NTT/ntt.h"
+#include "../helpers/assertion.h"
 #include "../helpers/cell.h"
 #include "../helpers/indicators.h"
+#include "../helpers/math.h"
+#include "../helpers/mod_int.h"
 #include "../helpers/sieve_primes.h"
+#include "../helpers/types.h"
 
 namespace mobius::details {
 size_t get_max_power(prime_t upto, prime_t base) {
@@ -13,7 +23,7 @@ size_t get_max_power(prime_t upto, prime_t base) {
     v *= base;
     ++ans;
   }
-  return ans;
+  return std::max<size_t>(ans, 1);
 }
 
 std::vector<mint> get_mobius_prime_range(prime_t upto, double lg2_prec,
@@ -133,7 +143,9 @@ std::vector<mint> get_mobius_using_newton(prime_t upto, double lg2_prec,
       } else {
         truncate_and_resize(cur, max_cell, mobius_sz);
         truncate_and_resize(mobius, max_cell, mobius_sz);
-        for (size_t i = 0; i < mobius.size(); ++i) mobius[i] *= cur[i];
+        for (size_t ind = 0; ind < mobius.size(); ++ind) {
+          mobius[ind] *= cur[ind];
+        }
       }
     }
 

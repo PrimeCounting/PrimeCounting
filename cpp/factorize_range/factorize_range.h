@@ -1,7 +1,10 @@
 #pragma once
-#include <array>
+
+#include <algorithm>
 #include <memory>
 #include <optional>
+#include <string>
+#include <utility>
 #include <vector>
 
 #include "../helpers/assertion.h"
@@ -28,7 +31,8 @@ using Factorization = std::vector<std::pair<prime_t, size_t>>;
  */
 struct FactorizeBase {
   // `end` is used to calibrate the maximum number to save a factor for.
-  FactorizeBase(prime_t end, std::optional<prime_t> max_prime = std::nullopt);
+  explicit FactorizeBase(prime_t end,
+                         std::optional<prime_t> max_prime = std::nullopt);
 
   size_t m_factorize_upto;
   std::vector<prime_t> m_single_factor;

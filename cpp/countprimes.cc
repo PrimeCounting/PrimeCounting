@@ -1,7 +1,10 @@
+#include <cmath>
 #include <iostream>
+#include <memory>
 #include <sstream>
 
 #include "count_primes/count_primes.h"
+#include "helpers/types.h"
 
 int main(int argc, char* argv[]) {
   if (argc < 2 || argc > 3) {

@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 
+#include <vector>
+
 #include "naive_conv.h"
 
 using vi = std::vector<int>;

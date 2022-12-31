@@ -10,10 +10,6 @@ TEST(bit_reverse, test_reverse_array) {
   std::iota(v.begin(), v.end(), 0);
   auto v1 = v;
   auto v2 = v;
-  auto v3 = v;
-  auto v4 = v;
-  auto v5 = v;
-  auto v6 = v;
   auto expected = v1;
   bit_reverse_naive(expected);
   bit_reverse_impl_small(v1);
